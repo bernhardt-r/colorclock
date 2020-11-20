@@ -65,7 +65,7 @@ function colorClock(){
   document.body.style.background = hexColor;
   
   
-  var topMargin = seconds + '%';
+  var topMargin = 'calc(' + seconds + '% + 36px)';
   document.getElementById('clock').style.top = topMargin;
   
   setTimeout(function() {
