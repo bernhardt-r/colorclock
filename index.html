@@ -33,8 +33,6 @@ html, body {
   text-align: center;
   font-size: 72px;
   position: relative;
-  top: 50%;
-  margin-top: -36px;
 }
 </style>
 </head>
@@ -65,7 +63,7 @@ function colorClock(){
   document.body.style.background = hexColor;
   
   
-  var topMargin = 'calc(' + seconds + '% + 36px)';
+  var topMargin = seconds + '%';
   document.getElementById('clock').style.top = topMargin;
   
   setTimeout(function() {
